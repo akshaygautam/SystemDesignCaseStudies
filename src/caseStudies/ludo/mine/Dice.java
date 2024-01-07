@@ -1,4 +1,4 @@
-package caseStudies.ludo;
+package caseStudies.ludo.mine;
 
 
 import java.util.Random;

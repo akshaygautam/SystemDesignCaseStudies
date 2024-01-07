@@ -1,4 +1,4 @@
-package caseStudies.ludo;
+package caseStudies.ludo.mine;
 
 import java.util.*;
 
@@ -13,6 +13,10 @@ public class BoardHelper {
         initializePieceInitialPos();
         markPath(board);
         setTraverPath(board);
+        markRestArea(board, "Red", true);
+        markRestArea(board, "Green", true);
+        markRestArea(board, "Blue", true);
+        markRestArea(board, "Yellow", true);
     }
 
     private static void markFinishArea(String[][] board) {
@@ -38,44 +42,46 @@ public class BoardHelper {
             }
         }
     }
-
     public static void markRestArea(String[][] board, String color) {
+        markRestArea(board, color, false);
+    }
+    public static void markRestArea(String[][] board, String color, boolean useEmptySymbol) {
         switch (color) {
             case "Green" -> {
                 for (int i = 0; i <= 5; i++) {
                     for (int j = 0; j <= 5; j++) {
-                        markInitials(i, j, board);
+                        markInitials(i, j, board, useEmptySymbol);
                     }
                 }
             }
             case "Yellow" -> {
                 for (int i = 0; i <= 5; i++) {
                     for (int j = 9; j <= 14; j++) {
-                        markInitials(i, j, board);
+                        markInitials(i, j, board, useEmptySymbol);
                     }
                 }
             }
             case "Red" -> {
                 for (int i = 9; i <= 14; i++) {
                     for (int j = 0; j <= 5; j++) {
-                        markInitials(i, j, board);
+                        markInitials(i, j, board, useEmptySymbol);
                     }
                 }
             }
             case "Blue" -> {
                 for (int i = 9; i <= 14; i++) {
                     for (int j = 9; j <= 14; j++) {
-                        markInitials(i, j, board);
+                        markInitials(i, j, board, useEmptySymbol);
                     }
                 }
             }
         }
     }
 
-    private static void markInitials(int row, int col, String[][] board) {
+    private static void markInitials(int row, int col, String[][] board, boolean useEmptySymbol) {
         String key = row +"$"+col;
         wasteLand.add(key);
-        board[row][col] = piecesInitialPosition.getOrDefault(key,"  ");
+        board[row][col] = useEmptySymbol ? "%%" : piecesInitialPosition.getOrDefault(key,"  ");
     }
 
     private static void initializePieceInitialPos() {

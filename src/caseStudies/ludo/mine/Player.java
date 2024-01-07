@@ -1,4 +1,4 @@
-package caseStudies.ludo;
+package caseStudies.ludo.mine;
 
 import java.util.Arrays;
 
@@ -20,9 +20,10 @@ public class Player {
         return Arrays.stream(pieces).allMatch(Piece::isCompleted);
     }
 
-    public void rollDice() {
+    public int rollDice() {
         this.numberRolled = Dice.Instance.roll();
         this.hasRolled6 = this.numberRolled == 6;
+        return this.numberRolled;
     }
     public String getColor() {
         return color;

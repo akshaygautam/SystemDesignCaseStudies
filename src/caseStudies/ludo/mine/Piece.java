@@ -1,4 +1,4 @@
-package caseStudies.ludo;
+package caseStudies.ludo.mine;
 
 public class Piece {
     private final String color;

@@ -1,28 +1,18 @@
-package caseStudies.ludo;
+package caseStudies.ludo.mine;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Board {
-    public static void main(String[] args) {
-        Board board1 = new Board();
-
-        Player[] players = new Player[2];
-        players[0] = new Player("Green");
-        players[1] = new Player("Blue");
-        board1.initializePlayers(players);
-        System.out.println(board1);
-    }
     private final String[][] board;
-    public Board() {
+    public Board(List<Player> players) {
         board = new String[15][15];
         BoardHelper.designBoard(board);
-    }
-
-    public void initializePlayers(Player[] players) {
         for (Player player: players) {
             BoardHelper.markRestArea(board, player.getColor());
         }
     }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -31,5 +21,9 @@ public class Board {
             stringBuilder.append("\n");
         }
         return stringBuilder.toString();
+    }
+
+    public void display() {
+        System.out.println(this);
     }
 }
