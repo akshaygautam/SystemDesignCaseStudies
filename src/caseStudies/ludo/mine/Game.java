@@ -39,7 +39,7 @@ public class Game {
             }
             rollComplete = true;
             int rolledNumber = currentPlayer.rollDice();
-            boolean movesArePossible =  ludoBoard.movePossible(rolledNumber, currentPlayer);
+            boolean movesArePossible =  false;//ludoBoard.movePossible(rolledNumber, currentPlayer);
             if(!movesArePossible) {
                 System.out.println("There are no possible moves. Moving on...");
                 setNextPlayer();

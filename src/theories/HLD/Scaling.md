@@ -20,7 +20,7 @@ This involves the increasing capacity of single server, by adding powerful hardw
 
 2. Improved hardware will increase the cost, because the more advance or improved the tech is the costlier it gets.
 
-[VerticalScale.img](https://www.cloudzero.com/wp-content/uploads/2023/10/how-vertical-scaling-works-1.webp)
+![VerticalScale.img](https://www.cloudzero.com/wp-content/uploads/2023/10/how-vertical-scaling-works-1.webp)
 
 
 ### Horizontal Scaling
@@ -39,7 +39,7 @@ Here each server operates independently, and the workload is divided among them.
 
 2. Not all applications are easily horizontally scalable. Some will require whole architecture upgrade.
 
-[HorizontalScale.img](https://www.cloudzero.com/wp-content/uploads/2023/10/how-horizontal-scaling-works-1.webp)
+![HorizontalScale.img](https://www.cloudzero.com/wp-content/uploads/2023/10/how-horizontal-scaling-works-1.webp)
 
 ### Auto-Scaling
 
