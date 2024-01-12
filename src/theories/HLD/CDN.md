@@ -5,6 +5,8 @@ It is a distributed network of servers strategically placed at various locations
 efficiently to users. CDN providers cache static content, such as images, stylesheets, scripts and other large files, on
 server close to the end-users, reducing latency and improving website performance.
 
+![CDN](https://www.esds.co.in/blog/wp-content/uploads/2021/02/Working-of-CDN.png)
+
 ## CDN Key Concepts
 
 1. **Content Caching:**
