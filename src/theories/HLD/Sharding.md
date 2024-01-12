@@ -14,6 +14,8 @@ scalability, performance, and reliability.
 - Divides a table into partitions with columns, putting a subset of columns in each partition.
 - This is useful when some columns are accessed more frequently than others.
 
+  ![V vs H](https://hazelcast.com/wp-content/uploads/2021/12/31_Sharding.png)
+
 ### 3. Directory-Based Partitioning [Code](../../caseStudies/sharding/DirectoryBasedPartitioning.java):
 - A metadata-based partitioning where a directory or lookup table maps data to specific partitions.
 
