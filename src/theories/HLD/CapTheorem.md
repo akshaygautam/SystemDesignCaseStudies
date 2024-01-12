@@ -1,5 +1,7 @@
 # CAP Theorem
 
+![CAP](https://media.licdn.com/dms/image/C5112AQFbYSaM_qyt8A/article-cover_image-shrink_600_2000/0/1540791647576?e=2147483647&v=beta&t=qpVLQlOnqRpa0YXnqHOUNSV321HgRhXcm1xB79rv8bo)
+
 CAP theorem states that it is impossible for a distributed system to simultaneously provide all three of the following guarantees
 
 1. **Consistency (C):**
