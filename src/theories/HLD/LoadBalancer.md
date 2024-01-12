@@ -1,5 +1,5 @@
 # Load Balancer
-[Code](src/caseStudies/loadbalancer/LoadBalancer.java)
+[Code](../../caseStudies/loadbalancer/LoadBalancer.java)
 Load balancer is a crucial component in distributed systems and web applications.
 Their primary purpose is to distribute incoming network traffic across multiple servers to ensure optimal utilization of resources, 
 prevent server overload, and enhance system reliability and performance.
